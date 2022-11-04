@@ -1,0 +1,36 @@
+title = "Bezier"
+gitRepoUrl = "https://github.com/bstummer/bezier"
+
+gitSourceBranch = "main"
+changelog = true
+classOrder = []
+
+[docusaurus]
+onBrokenLinks = "throw"
+onBrokenMarkdownLinks = "warn"
+
+organizationName = "bstummer"
+projectName = "Bezier"
+url = "https://bstummer.github.io"
+baseUrl = "/bezier/"
+tagline = "Advanced Bézier curves module"
+
+[[navbar.items]]
+href = "https://example.com/"
+label = "Forum post"
+position = "right"
+
+[footer]
+style = "dark"
+copyright = " "
+
+[[footer.links]]
+title = "Links"
+
+[[footer.links.items]]
+label = "Introduction"
+href = "https://example.com/"
+
+[[footer.links.items]]
+label = "API"
+href = "https://example.com/"
