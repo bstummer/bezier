@@ -11,10 +11,10 @@ Although it encompasses many features, it is very lightweight. It won't waste an
 
 ## Installation
 
-Get the module [here](https://example.com/) and insert into your game via the Toolbox.
+Get the module [here](https://www.roblox.com/library/11467361559) and insert into your game via the Toolbox.
 You can also just paste this in the command bar:
 ```lua
-game:GetObjects("rbxassetid://...")[1].Parent=game.ReplicatedStorage
+game:GetObjects("rbxassetid://11467361559")[1].Parent=game.ReplicatedStorage
 ```
 
 ## How to create a Bézier curve
@@ -36,7 +36,7 @@ local curve = Bezier.fromParts(workspace.BezierCurve)
 ## Get a point on the curve
 
 :::tip
-For testing and visualization purposes, you can get my visualization module [here](https://example.com/).
+For testing and visualization purposes, you can get my visualization module [here](https://www.roblox.com/library/11467394566).
 :::
 
 The recommended way to calculate a point on the curve is `BezierCurve:DeCasteljau` (named after De Casteljau's algorithm).
@@ -86,7 +86,7 @@ for i = 0, iterations do
 end
 ```
 
-** Continue to the API section [here](https://example.com/)!**
+** Continue to the API section [here](https://bstummer.github.io/bezier/api/Bezier)!**
 
 ## Things to consider
 

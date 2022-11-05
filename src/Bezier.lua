@@ -412,13 +412,14 @@ function BezierCurve:Subdivide(t:number?)
 	local left = {}
 	local right = {}
 
-	local points = {unpack(self.Points)}
+	local points = self.Points
 	local n = #points
 	for j = 1, n - 1 do
 		for k = 1, n - j do
 			if k == 1 then
 				table.insert(left, points[1])
-			elseif k == n - j then
+			end
+			if k == n - j then
 				table.insert(right, points[k+1])
 			end
 			points[k] = points[k] * (1 - t) + points[k + 1] * t
@@ -545,9 +546,9 @@ end
 	In the future, I will try to remove the requirement to install it.
 ]=]
 function BezierCurve:GetExtrema():{
-	X: {Vector3},
-	Y: {Vector3},
-	Z: {Vector3}
+	X: {number},
+	Y: {number},
+	Z: {number}
 	}
 	if not comp then
 		error("GetExtrema requires the installation of another module,"

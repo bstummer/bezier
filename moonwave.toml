@@ -16,7 +16,7 @@ baseUrl = "/bezier/"
 tagline = "Advanced Bézier curves module"
 
 [[navbar.items]]
-href = "https://example.com/"
+href = "https://devforum.roblox.com/t/2043623"
 label = "Forum post"
 position = "right"
 
@@ -29,8 +29,8 @@ title = "Links"
 
 [[footer.links.items]]
 label = "Introduction"
-href = "https://example.com/"
+href = "https://bstummer.github.io/bezier/docs/intro"
 
 [[footer.links.items]]
 label = "API"
-href = "https://example.com/"
+href = "https://bstummer.github.io/bezier/api/Bezier"
