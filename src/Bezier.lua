@@ -65,7 +65,7 @@ BezierCurve.__index = BezierCurve
 ]=]
 
 --[=[
-	Constructs a new BezierCurve from an array of points.
+	Constructs a new [BezierCurve] from an array of points.
 	Obviously, you should use two or more points.
 
 	@param points -- The array of points
@@ -80,7 +80,7 @@ function Bezier.new(points:{Vector3})
 end
 
 --[=[
-	Constructs a new BezierCurve from a folder with Parts.
+	Constructs a new [BezierCurve] from a folder with Parts.
 	The parts must have a number as their name (1, 2, 3, ...) so the order of the points is clear.
 
 	@param folder -- The instance that has the Parts as children
@@ -99,7 +99,7 @@ function Bezier.fromParts(folder:Instance)
 end
 
 --[=[
-	Constructs a random BezierCurve.
+	Constructs a random [BezierCurve].
 	If `start` is a CFrame, the curve will go in its LookVector's direction, otherwise in a random direction.
 
 	@param start -- The first point
