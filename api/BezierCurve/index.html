@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="generator" content="Docusaurus v2.0.1">
 <title data-rh="true">BezierCurve | Bezier</title><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://bstummer.github.io/bezier/api/BezierCurve"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="BezierCurve | Bezier"><meta data-rh="true" name="description" content="Represents a Bézier curve."><meta data-rh="true" property="og:description" content="Represents a Bézier curve."><link data-rh="true" rel="canonical" href="https://bstummer.github.io/bezier/api/BezierCurve"><link data-rh="true" rel="alternate" href="https://bstummer.github.io/bezier/api/BezierCurve" hreflang="en"><link data-rh="true" rel="alternate" href="https://bstummer.github.io/bezier/api/BezierCurve" hreflang="x-default"><link rel="stylesheet" href="/bezier/assets/css/styles.59a51795.css">
-<link rel="preload" href="/bezier/assets/js/runtime~main.971c4a30.js" as="script">
-<link rel="preload" href="/bezier/assets/js/main.4e30c5f0.js" as="script">
+<link rel="preload" href="/bezier/assets/js/runtime~main.1efb9c98.js" as="script">
+<link rel="preload" href="/bezier/assets/js/main.0b966be5.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -65,7 +65,11 @@
   Calculates the curve of a derivative.
   <code>BezierCurve:GetDerivative(t).Unit ≈ BezierCurve:CreateDerivativeCurve():GetPoint(t).Unit</code>
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetIterations"><code style="text-decoration:none">GetIterations</code><a class="hash-link" href="#GetIterations" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L392"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetIterations</code><code>(</code><div class="inset_uKQm"><div><code>steps<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetCurvature"><code style="text-decoration:none">GetCurvature</code><a class="hash-link" href="#GetCurvature" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L389"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetCurvature</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+<p>A number between 0 and 1</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS">number</code></div><div>
+<p>Returns the curvature of the curve at the time t.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetIterations"><code style="text-decoration:none">GetIterations</code><a class="hash-link" href="#GetIterations" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L402"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetIterations</code><code>(</code><div class="inset_uKQm"><div><code>steps<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>Number of iterations</p>
 </span></span></div><div><code>func<!-- -->: </code><code class="purple_ieR2">(</code><code class="blue_P4bS">number</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Vector3" target="_blank" rel="noopener noreferrer">Vector3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div></div><code>) → </code><code class="purple_ieR2">{</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Vector3" target="_blank" rel="noopener noreferrer">Vector3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">}</code></div><div>
 <p>
@@ -74,18 +78,18 @@
   By default, it uses <a href="/bezier/api/BezierCurve#DeCasteljau">BezierCurve:DeCasteljau</a>. This may be useful
   to visualize the path of the curve or other things.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Subdivide"><code style="text-decoration:none">Subdivide</code><a class="hash-link" href="#Subdivide" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L410"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">Subdivide</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Subdivide"><code style="text-decoration:none">Subdivide</code><a class="hash-link" href="#Subdivide" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L420"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">Subdivide</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
 <p>Position where it divides</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/bezier/api/BezierCurve">BezierCurve,</a></code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/bezier/api/BezierCurve">BezierCurve</a></code></div><div>
 <p>Subdivides the curve into two other curves.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ElevateDegree"><code style="text-decoration:none">ElevateDegree</code><a class="hash-link" href="#ElevateDegree" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L441"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">ElevateDegree</code><code>(</code><div class="inset_uKQm"><div><code>times<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ElevateDegree"><code style="text-decoration:none">ElevateDegree</code><a class="hash-link" href="#ElevateDegree" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L451"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">ElevateDegree</code><code>(</code><div class="inset_uKQm"><div><code>times<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
 <p>Number of elevations, default is 1</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/bezier/api/BezierCurve">BezierCurve</a></code></div><div>
 <p>
   Calculates a new curve with an elevated degree (higher amount of points).
   The curve itself stays unchanged.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetExtrema"><code style="text-decoration:none">GetExtrema</code><a class="hash-link" href="#GetExtrema" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L548"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetExtrema</code><code>(</code><code>) → </code><code class="purple_ieR2">{</code><div class="inset_uKQm"><code>X<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">number</code><code class="green_DgR4">}</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>Y<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">number</code><code class="green_DgR4">}</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>Z<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">number</code><code class="green_DgR4">}</code></div><code class="purple_ieR2">}</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetExtrema"><code style="text-decoration:none">GetExtrema</code><a class="hash-link" href="#GetExtrema" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L558"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetExtrema</code><code>(</code><code>) → </code><code class="purple_ieR2">{</code><div class="inset_uKQm"><code>X<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">number</code><code class="green_DgR4">}</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>Y<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">number</code><code class="green_DgR4">}</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>Z<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">number</code><code class="green_DgR4">}</code></div><code class="purple_ieR2">}</code></div><div>
 <p>
   Calculates the extrema (minimum and maximum) of the curve for every axis.
   They are returned as t values in an array, where the first value is the
@@ -100,7 +104,7 @@
   This is due to the fact that a numerical root-finding algorithm has to be used.
   In the future, I will try to remove the requirement to install it.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetBoundingBox"><code style="text-decoration:none">GetBoundingBox</code><a class="hash-link" href="#GetBoundingBox" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L622"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetBoundingBox</code><code>(</code><div class="inset_uKQm"><div><code>minimal<!-- -->: </code><code class="blue_P4bS">boolean?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetBoundingBox"><code style="text-decoration:none">GetBoundingBox</code><a class="hash-link" href="#GetBoundingBox" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L632"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetBoundingBox</code><code>(</code><div class="inset_uKQm"><div><code>minimal<!-- -->: </code><code class="blue_P4bS">boolean?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>Determines if the bounding box is minimal or approximate</p>
 </span></span></div><div><code>rotated<!-- -->: </code><code class="blue_P4bS">boolean?</code><span class="inlineDescription_G7Er">-- <span>
 <p>Determines if the minimal bounding box is rotated or axis-aligned</p>
@@ -122,7 +126,7 @@
   This isn't the smallest bounding box possible, but I wasn't motivated to implement
   a better algorithm because it is a lot of effort.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetNormal"><code style="text-decoration:none">GetNormal</code><a class="hash-link" href="#GetNormal" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L723"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetNormal</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="GetNormal"><code style="text-decoration:none">GetNormal</code><a class="hash-link" href="#GetNormal" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L733"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">GetNormal</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
 <p>A number between 0 and 1</p>
 </span></span></div></div><code>) → </code><code class="purple_ieR2">{</code><div class="inset_uKQm"><code>o<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Vector3" target="_blank" rel="noopener noreferrer">Vector3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>dt<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Vector3" target="_blank" rel="noopener noreferrer">Vector3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>r<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Vector3" target="_blank" rel="noopener noreferrer">Vector3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>n<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Vector3" target="_blank" rel="noopener noreferrer">Vector3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><code class="purple_ieR2">}</code></div><div>
 <p>
@@ -130,9 +134,9 @@
   the normal vector and the cross product of normal and derivative vector.
   This is ideal to construct a CFrame.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Clone"><code style="text-decoration:none">Clone</code><a class="hash-link" href="#Clone" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L783"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">Clone</code><code>(</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/bezier/api/BezierCurve">BezierCurve</a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Clone"><code style="text-decoration:none">Clone</code><a class="hash-link" href="#Clone" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L793"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">Clone</code><code>(</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/bezier/api/BezierCurve">BezierCurve</a></code></div><div>
 <p>Clones the curve.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroy"><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L790"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroy"><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/bstummer/bezier/blob/main/src/Bezier.lua#L800"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>BezierCurve<!-- -->:</code><code class="green_DgR4">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the curve.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -307,6 +311,28 @@
             }
         },
         {
+            &quot;name&quot;: &quot;GetCurvature&quot;,
+            &quot;desc&quot;: &quot;Returns the curvature of the curve at the time t.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;t&quot;,
+                    &quot;desc&quot;: &quot;A number between 0 and 1&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 389,
+                &quot;path&quot;: &quot;src/Bezier.lua&quot;
+            }
+        },
+        {
             &quot;name&quot;: &quot;GetIterations&quot;,
             &quot;desc&quot;: &quot;Iterates from t = 0 to 1 in the given amount of steps and passes the t value\nin a function in each step.\nBy default, it uses [BezierCurve:DeCasteljau]. This may be useful\nto visualize the path of the curve or other things.&quot;,
             &quot;params&quot;: [
@@ -329,7 +355,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 392,
+                &quot;line&quot;: 402,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -351,7 +377,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 410,
+                &quot;line&quot;: 420,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -373,7 +399,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 441,
+                &quot;line&quot;: 451,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -389,7 +415,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 548,
+                &quot;line&quot;: 558,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -428,7 +454,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 622,
+                &quot;line&quot;: 632,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -450,7 +476,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 723,
+                &quot;line&quot;: 733,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -466,7 +492,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 783,
+                &quot;line&quot;: 793,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         },
@@ -477,7 +503,7 @@
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 790,
+                &quot;line&quot;: 800,
                 &quot;path&quot;: &quot;src/Bezier.lua&quot;
             }
         }
@@ -531,8 +557,8 @@
         &quot;line&quot;: 36,
         &quot;path&quot;: &quot;src/Bezier.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#Length" class="table-of-contents__link toc-highlight">Length</a></li><li><a href="#Points" class="table-of-contents__link toc-highlight">Points</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Clone" class="table-of-contents__link toc-highlight">:Clone</a></li><li><a href="#ConvertT" class="table-of-contents__link toc-highlight">:ConvertT</a></li><li><a href="#CreateDerivativeCurve" class="table-of-contents__link toc-highlight">:CreateDerivativeCurve</a></li><li><a href="#DeCasteljau" class="table-of-contents__link toc-highlight">:DeCasteljau</a></li><li><a href="#Destroy" class="table-of-contents__link toc-highlight">:Destroy</a></li><li><a href="#ElevateDegree" class="table-of-contents__link toc-highlight">:ElevateDegree</a></li><li><a href="#GetBoundingBox" class="table-of-contents__link toc-highlight">:GetBoundingBox</a></li><li><a href="#GetDerivative" class="table-of-contents__link toc-highlight">:GetDerivative</a></li><li><a href="#GetExtrema" class="table-of-contents__link toc-highlight">:GetExtrema</a></li><li><a href="#GetIterations" class="table-of-contents__link toc-highlight">:GetIterations</a></li><li><a href="#GetNormal" class="table-of-contents__link toc-highlight">:GetNormal</a></li><li><a href="#GetPoint" class="table-of-contents__link toc-highlight">:GetPoint</a></li><li><a href="#GetSecondDerivative" class="table-of-contents__link toc-highlight">:GetSecondDerivative</a></li><li><a href="#Polynomial" class="table-of-contents__link toc-highlight">:Polynomial</a></li><li><a href="#Subdivide" class="table-of-contents__link toc-highlight">:Subdivide</a></li><li><a href="#UpdateLUT" class="table-of-contents__link toc-highlight">:UpdateLUT</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Links</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://bstummer.github.io/bezier/docs/intro" target="_blank" rel="noopener noreferrer" class="footer__link-item">Introduction<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://bstummer.github.io/bezier/api/Bezier" target="_blank" rel="noopener noreferrer" class="footer__link-item">API<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright"> </div></div></div></footer></div>
-<script src="/bezier/assets/js/runtime~main.971c4a30.js"></script>
-<script src="/bezier/assets/js/main.4e30c5f0.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#Length" class="table-of-contents__link toc-highlight">Length</a></li><li><a href="#Points" class="table-of-contents__link toc-highlight">Points</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Clone" class="table-of-contents__link toc-highlight">:Clone</a></li><li><a href="#ConvertT" class="table-of-contents__link toc-highlight">:ConvertT</a></li><li><a href="#CreateDerivativeCurve" class="table-of-contents__link toc-highlight">:CreateDerivativeCurve</a></li><li><a href="#DeCasteljau" class="table-of-contents__link toc-highlight">:DeCasteljau</a></li><li><a href="#Destroy" class="table-of-contents__link toc-highlight">:Destroy</a></li><li><a href="#ElevateDegree" class="table-of-contents__link toc-highlight">:ElevateDegree</a></li><li><a href="#GetBoundingBox" class="table-of-contents__link toc-highlight">:GetBoundingBox</a></li><li><a href="#GetCurvature" class="table-of-contents__link toc-highlight">:GetCurvature</a></li><li><a href="#GetDerivative" class="table-of-contents__link toc-highlight">:GetDerivative</a></li><li><a href="#GetExtrema" class="table-of-contents__link toc-highlight">:GetExtrema</a></li><li><a href="#GetIterations" class="table-of-contents__link toc-highlight">:GetIterations</a></li><li><a href="#GetNormal" class="table-of-contents__link toc-highlight">:GetNormal</a></li><li><a href="#GetPoint" class="table-of-contents__link toc-highlight">:GetPoint</a></li><li><a href="#GetSecondDerivative" class="table-of-contents__link toc-highlight">:GetSecondDerivative</a></li><li><a href="#Polynomial" class="table-of-contents__link toc-highlight">:Polynomial</a></li><li><a href="#Subdivide" class="table-of-contents__link toc-highlight">:Subdivide</a></li><li><a href="#UpdateLUT" class="table-of-contents__link toc-highlight">:UpdateLUT</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Links</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://bstummer.github.io/bezier/docs/intro" target="_blank" rel="noopener noreferrer" class="footer__link-item">Introduction<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://bstummer.github.io/bezier/api/Bezier" target="_blank" rel="noopener noreferrer" class="footer__link-item">API<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright"> </div></div></div></footer></div>
+<script src="/bezier/assets/js/runtime~main.1efb9c98.js"></script>
+<script src="/bezier/assets/js/main.0b966be5.js"></script>
 </body>
 </html>
