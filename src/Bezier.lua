@@ -2,7 +2,7 @@
 	
 Documentation: https://bstummer.github.io/bezier/
 
-Version of this module: 1.0.0
+Version of this module: 1.1.0
 
 Created by Vaschex
 
@@ -379,6 +379,16 @@ function BezierCurve:CreateDerivativeCurve(k:number?)
 		table.insert(new, p)
 	end
 	return Bezier.new(new)
+end
+
+--[=[
+	Returns the curvature of the curve at the time t.
+
+	@param t -- A number between 0 and 1
+]=]
+function BezierCurve:GetCurvature(t:number):number
+	local d = self:GetDerivative(t)
+	return d:Cross(self:GetSecondDerivative(t)).Magnitude / (d.Magnitude ^ 3)
 end
 
 --[=[
