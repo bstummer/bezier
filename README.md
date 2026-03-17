@@ -1,6 +1,8 @@
 # Advanced Bézier Curves for Luau
 This is an advanced Bézier curves module for Luau, designed to support Vector3 curves of any degree. It is built to provide all the necessary functions for game development while remaining incredibly lightweight. The module ensures that calculations are never wasted on features you aren't actively using.
 
+<br>
+
 ## Features
 - Multiple Constructors: Create curves using standard arrays of Vector3 points, folders of numbered parts, or generate them randomly.
 - Arc Length Parameterization: Distribute points evenly along a curve using the ConvertT function, solving the common issue of uneven point distribution.
@@ -8,12 +10,16 @@ This is an advanced Bézier curves module for Luau, designed to support Vector3 
 - Advanced Mathematics: Includes functionality for calculating derivatives, second derivatives, curvature, and even bounding boxes.
 - Rotation Minimising Frames: Easily retrieve the normal vector and cross product for constructing CFrames using GetNormal.
 
+<br>
+
 ## Installation
 You can install the Bezier module directly from Roblox by grabbing it from the [library](https://www.roblox.com/library/11467361559) or running the following snippet in your command bar:
 
 ```lua
 game:GetObjects("rbxassetid://11467361559")[1].Parent=game.ReplicatedStorage
 ```
+
+<br>
 
 ## Quick Start
 ### Creating a Basic Curve
@@ -72,8 +78,9 @@ for i = 0, iterations do
 end
 ```
 
+<br>
 
-### Important Considerations
+## Important Considerations
 - Argument Validation: The module does not perform internal checks on the arguments you pass to its functions. You should rely on the type annotations and read the source code to understand expected inputs.
 - Lookup Tables (LUT): It is possible to modify control points at runtime. However, if you do, you must manually call `BezierCurve:UpdateLUT()`. This is because functions like `ConvertT`, `GetNormal`, and the `Length` property rely on internal lookup tables that will become inaccurate after modifications.
 - Extrema Calculations: Using the `GetExtrema` function requires a numerical root-finding algorithm. Therefore, you must install a separate complex numbers module and place it as a child of the Bezier module.
